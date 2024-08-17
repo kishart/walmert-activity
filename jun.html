@@ -90,92 +90,40 @@ text-decoration: none;
 color:rgb(224, 48, 48);
 }
 
+
+
+
 .container2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* No gap between the columns */
-    gap: 0;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 15%;
+    place-items: center;
+    background-color: #25cf2b;
 }
+
 .product-card {
-    border: 1px solid #e5e5e5;
-    padding: 16px;
-    text-align: center;
-    /* Ensure the cards have no margin or gaps */
-    margin: 0;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  background-color: #4e6b4f;
 }
-
-
-.img8{
-    width: 60%;
-    height: 10%;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-.img9{
-    width: 60%;
-    height: 30%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.img10{
-    width: 30%;
-    height: 40%;
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-.product-card p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-font-size: 25px;
-    margin-bottom: 40px;
-}
-
-.product-price {
-    font-size: 16px;
-    color: #e91e63;
-    margin-bottom: 16px;
-    font-weight: bold;
-}
-
 .add-to-cart-btn {
     background-color: #4caf50;
     color: #fff;
     border: none;
-    padding: 18px 46px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 96px 32px; /* Increase the padding on the left and right */
+    font-size: 16px;
     cursor: pointer;
 }
 
 .add-to-cart-btn:hover {
     background-color: #45a049;
 }
-.desc1{
-    background-color: #544f72;
-    margin-bottom: px;
+.priceandadd{
+    display: grid;
+    place-items: center;
 }
-.desc2{
-    background-color: #50985d;
-    margin-bottom: 40px;
-}
-.desc3{
-    background-color: #2a169f;
-    margin-bottom: 40px;
-}
-footer{
-    background-color: rgb(203, 199, 199);
-   
-
-}
-footer p{
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding: 20px;
+.img{
+    width:auto;
+    height: 100%;
 }
 </style>
 </head>
@@ -200,38 +148,59 @@ footer p{
 <section>
 <h1>What's <span>New </span> <a href="">View All</a></h1>
 </section>
+
 <section class="container2">
     <div class="product-card">
-        <div class="imgcard">
+      <div class="img">
         <img src="Reese_s.png" class="img8" alt="Reese's Chocolate Peanut Butter Hearts King Size">
-    </div>
+      </div>
+      
+      <div>
         <p>Reese's Chocolate Peanut Butter Hearts King Size | 2.4oz</p>
+      </div>
+      
+      <div class="priceandadd">
         <p class="product-price">See Price</p>
         <button class="add-to-cart-btn">+ Add</button>
+      </div>
+      
     </div>
-    <div class="product-card"> 
-        <div class="imgcard">
-        <img src="kisses.png" class="img9" alt="Hershey's Kisses Creamy & Choco Almond Assorted">
-    </div>
-        <p>Hershey's Kisses Creamy & Choco Almond Assorted | 180g</p>
-        <p class="product-price">See Price</p>
-        <button class="add-to-cart-btn">+ Add</button>
-    </div>
+    
     <div class="product-card">
-        <div class="imgcard">
-        <img src="kisses_2.png" class="img10" alt="Hershey's Kisses Creamy & Choco Almond Assorted">
-        </div>
-        <p>Hershey's Kisses Creamy & Choco Almond Assorted | 81g</p>
+        <div class="img">
+        <img src="kisses.png" class="img9" alt="Hershey's Kisses Creamy & Choco Almond Assorted">
+      </div>
+      
+      <div>
+        <p>Hershey's Kisses Creamy & Choco Almond Assorted | 180g</p>
+      </div>
+      
+      <div class="priceandadd">
         <p class="product-price">See Price</p>
         <button class="add-to-cart-btn">+ Add</button>
+      </div>
+    </div>
+    
+    <div class="product-card">
+        <div class="img">
+        <img src="kisses_2.png" class="img10" alt="Hershey's Kisses Creamy & Choco Almond Assorted">
+      </div>
+      
+      <div>
+        <p>Hershey's Kisses Creamy & Choco Almond Assorted | 81g</p>
+      </div>
+      
+      <div class="priceandadd">
+        <p class="product-price">See Price</p>
+        <button class="add-to-cart-btn">+ Add</button>
+      </div>
     </div>
 </section>
 </main>
 </div>
 
 <footer>
-    <p>&copy; 2024 WalterMart Delivery</p>
-
+&copy; 2024 WalterMart Delivery</p>
 </footer>
 </body>
 
