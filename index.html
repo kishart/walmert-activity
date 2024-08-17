@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walmert</title>
+
+<style>
+body {
+margin: 0;
+}
+
+header {
+box-shadow: 5px 5px 30px grey;
+
+}
+
+nav {
+display: grid;
+grid-template-columns: 1fr 3fr 1fr 1fr;
+gap: 10px;
+}
+
+.img1 {
+width: 70px;
+height: 60px;
+padding-left: 40px;
+padding-top: 20px;
+}
+
+.img2 {
+margin-left: 140px;
+}
+
+.img3 {
+width: 50px;
+height: 50px;
+padding-top: 30px;
+padding-left: 160px;
+float: left;
+}
+
+.img4 {
+width: 80px;
+height: 60px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 90px;
+padding-right: 90px;
+background-color: rgb(224, 48, 48);
+
+}
+
+.container1 {
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+gap:30px;
+padding-top: 30px;
+
+}
+.img5{
+margin-left:35px;
+width: 100%;
+height: 100%;
+}
+.img6{
+width: 95%;
+height: 100%;
+margin-left:18.3px;
+}
+.img7{
+margin-left:-30px;
+width: 100%;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-left: 38px;
+font-size: 30px;
+}
+span{
+color: rgb(224, 48, 48);
+font-style: italic;
+font-size: 27px;
+}
+a{
+font-size: 20px;
+text-decoration: none;
+color:rgb(224, 48, 48);
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* No gap between the columns */
+    gap: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.product-card {
+    border: 1px solid #e5e5e5;
+    padding: 16px;
+    text-align: center;
+    /* Ensure the cards have no margin or gaps */
+    margin: 0;
+}
+
+
+.img8{
+    width: 60%;
+    height: 10%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.product-card p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #e91e63;
+    margin-bottom: 16px;
+}
+
+.add-to-cart-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="burger_icon.png" class="img1" alt="burger icon">
+            <img src="WMLogo.png" class="img2" alt="wlogo">
+            <img src="search_icon.png" class="img3" alt="search icon">
+            <img src="cart.png" class="img4" alt="cart icon">
+        </nav>
+    </header>
+
+<div>
+<main>
+<section class="container1">
+<img src="Ad 1.png" class="img5" alt="Ad 1">
+<img src="Ad 2.png" class="img6" alt="Ad 2">
+<img src="Ad 3.png" class="img7" alt="Ad 3">
+</section>
+<section>
+<h1>What's <span>New </span> <a href="">View All</a></h1>
+</section>
+
+<section class="container2">
+    <div class="product-card">
+        <img src="Reese_s.png" class="img8" alt="Reese's Chocolate Peanut Butter Hearts King Size">
+        <p>Reese's Chocolate Peanut Butter Hearts King Size | 2.4oz</p>
+        <p class="product-price">See Price</p>
+        <button class="add-to-cart-btn">+ Add</button>
+    </div>
+    <div class="product-card"> 
+        <img src="kisses.png" class="img9" alt="Hershey's Kisses Creamy & Choco Almond Assorted">
+        <p>Hershey's Kisses Creamy & Choco Almond Assorted | 180g</p>
+        <p class="product-price">See Price</p>
+        <button class="add-to-cart-btn">+ Add</button>
+    </div>
+    <div class="product-card">
+        <img src="kisses_2.png" class="img10" alt="Hershey's Kisses Creamy & Choco Almond Assorted">
+        <p>Hershey's Kisses Creamy & Choco Almond Assorted | 81g</p>
+        <p class="product-price">See Price</p>
+        <button class="add-to-cart-btn">+ Add</button>
+    </div>
+</section>
+</main>
+</div>
+
+<footer>
+&copy; 2024 WalterMart Delivery</p>
+</footer>
+</body>
+
+</html>
